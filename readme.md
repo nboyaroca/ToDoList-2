@@ -13,7 +13,7 @@ This is an application that allows you to create a to-do list and has some featu
 - Modularity.
 - CSS variables.
 
-## 🔗 LINKS
+## 🔗 LINK
 
 [xcapde.github.io/ToDoList-2 ](https://xcapde.github.io/ToDoList-2/ "xcapde.github.io/ToDoList-2")
 
