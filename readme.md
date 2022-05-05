@@ -4,14 +4,14 @@
 This is an application that allows you to create a to-do list and has some features to interact with such as generating a list where you can add and remove tasks. I tried to modulate the JS code but is not finished. There are three predefined tasks as a sample when the app is started for first time.
 
 ## 💻 TECHNOLOGIES
--HTML 5
--CSS 3
--JS ES6  VANILLA
+- HTML 5
+- CSS 3
+- JS ES6  VANILLA
 
 ## ⚙️ TECHNIQUES USED
--Responsive Design.
--Modularity.
--CSS variables.
+- Responsive Design.
+- Modularity.
+- CSS variables.
 
 ## 🔗 LINKS
 
