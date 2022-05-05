@@ -1,5 +1,5 @@
 export const toDoList = {
-    listState: ['tasca 1', 'tasca 2', 'tasca 3'
+    listState: ['Anar al supermercat', 'Visitar a la família', 'Comprar vols'
     ],
 
     editByIndex(index, parentContainer){
