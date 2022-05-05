@@ -194,6 +194,7 @@ li {
     border-color: var(--darkGrey);
     border-style: solid;
     padding: 0;
+    margin: 3%;
 }
 
 .toDo_status_undone{
