@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOLIST 2 (4e)</title>
+    <link rel="stylesheet" href="./styles/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>       
+        <div class="header_left">
+            <button id="clear_all_button"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div id="logo">TO DO LIST</div>
+        <div class="header_rigth">
+            <button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    
+    <div id="search_object">
+        <input type="search" placeholder="Buscar a la llista" id="input_search" value="" />
+        <button id="buttonSearch" class="button_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <ul id="list_object">  
+    </ul>
+
+    <footer>
+        <div id="input_object">
+            <input type="text" placeholder="Què vols fer?" id="input_task" value="" />
+            <div id="buttons_inside_input">
+               <button id="buton_add" class="button_addTask"><i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./scripts/main.js" type="module"></script>
+
+</html>
