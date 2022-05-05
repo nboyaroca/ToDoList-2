@@ -141,8 +141,8 @@ header{
 ul{
     width: 100%;
     max-width: 600px;
-    height: 75vh;
-    margin: 0 auto;
+    height: 74vh;
+    margin: 1vh auto 0vh auto;
     padding: 0;
     overflow-y:auto;
     overscroll-behavior-inline: smooth;
@@ -166,7 +166,7 @@ li {
     align-items: center;
     transition: all 0.2s;
     margin-bottom: 0.5%;
-    padding: 3% 0% 3% 0%;
+    height: 12vh;
 }
 
 .toDo_main:hover{
@@ -290,9 +290,9 @@ ul i {
 .edit_container{
     display: flex;    
     z-index: 1;
-    width: 98%;
-    border-radius: 1em;
-    height: 10vh;
+    width: 100%;
+    /* border-radius: 1em; */
+    height: 12vh;
     background-color: var(--greenBlue);
     color:var(--white);
     align-items: center;
