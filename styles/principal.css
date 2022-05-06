@@ -161,6 +161,7 @@ li {
     transition: all 0.2s;
     margin-bottom: 0.5%;
     height: 12vh;
+    margin-right:1%
 }
 
 .toDo_main:hover{
