@@ -39,12 +39,6 @@
     margin-left: 1%;
 }
 
-.edit_container input::placeholder {
-    color: var(--semiWhite);
-    font-size: medium;
-    font-weight: 500;
-}
-
 .edit_container input:hover {
     background-color: var(--harderGreenBlue);
     margin-left: 1%;
@@ -54,6 +48,12 @@
     outline: none;
     border: none;
     margin-left: 1%;
+}
+
+.edit_container input::placeholder {
+    color: var(--semiWhite);
+    font-size: medium;
+    font-weight: 500;
 }
 
 .button_save, .button_close {

@@ -7,20 +7,6 @@
     position: relative;
 }
 
-#search_object button{
-    color: var(--dark);
-    font-size: medium;
-    background: none;
-    border: none;
-    color: var(--dark);
-    height: 100%;
-}
-
-.button_search{
-    position: absolute;
-    right: 9%;
-}
-
 #input_search{
     color: var(--lightGrey);
     outline: none;
@@ -41,4 +27,15 @@
 
 #input_search::placeholder{
     color: var(--darkGrey);
+}
+
+.button_search{
+    position: absolute;
+    color: var(--dark);
+    font-size: medium;
+    background: none;
+    border: none;
+    color: var(--dark);
+    height: 100%;
+    right: 9%;
 }

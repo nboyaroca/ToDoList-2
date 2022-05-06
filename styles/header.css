@@ -8,6 +8,16 @@ header{
     position: relative;
 }
 
+.header_left{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+    font-size: small;
+}
+
 #logo {
     color: var(--limeGreen);
     font-size: medium;
@@ -17,16 +27,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header_left{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 5%;
-    font-size: small;
 }
 
 .header_rigth{
