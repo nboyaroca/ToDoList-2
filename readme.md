@@ -11,7 +11,7 @@ This is an application that allows you to create a to-do list and has some featu
 ## ⚙️ TECHNIQUES USED
 - Responsive Design.
 - Modularity.
-- CSS variables.
+- CSS variables and import.
 
 ## 🔗 LINK
 
