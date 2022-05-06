@@ -6,7 +6,7 @@ export const toDoList = {
         console.log(index,parentContainer)
 
         parentContainer.innerHTML=(`<div class="edit_container">
-        <button ${index} class="edit_back_arrow"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id=${index} class="edit_back_arrow"><i class="fa-solid fa-arrow-left"></i></button>
         <input id="edit_input" type="text" placeholder="No hi ha res per editar" 
         value=""/>
         <button id=${index} class="button_save"><i class="fa-solid fa-circle-check"></i></button>
