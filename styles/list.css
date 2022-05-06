@@ -1,0 +1,104 @@
+/* CONTINGUT DE CADA TODO - ESTRUCTURA */
+
+li {
+    list-style-type: none;
+    width: 100%;
+}
+
+.toDo_main{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    margin-bottom: 0.5%;
+    height: 12vh;
+    margin-right:1%
+}
+
+.toDo_main:hover{
+    background-color: var(--softDark);
+    color: var(--vividBlue);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.toDo_main:active{
+    background-color: var(--greenBlue);
+    color: var(--white);
+    transition: background-color 0,2s;
+}
+
+/* STATUS TODO*/
+
+.toDo_status_default{
+    background:none;
+    margin: 0 auto; 
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    border-width: 0.15rem;
+    border-color: var(--darkGrey);
+    border-style: solid;
+    padding: 0;
+    margin: 3%;
+}
+
+.toDo_status_undone{
+    border-color: var(--lightRed);
+}
+
+.toDo_status_doing{
+    border-color: var(--yellow);
+}
+
+.toDo_status_done{
+    border-color: var(--vividGreen);
+}
+
+/* CONTENIDOR TODO */
+
+.toDo_container{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    overflow-wrap: anywhere;
+    text-transform: capitalize;
+}
+
+/* BOTONS TODO */
+
+ul i {
+    color: var(--darkGrey);
+    transition: all 0.2s;
+}
+
+.button_delete, .button_edit, .button_lock, .button_save, .button_close, .edit_back_arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+}
+
+.button_delete:hover, .button_edit:hover, .button_lock:hover{
+    background:none;
+}
+
+.button_edit:hover{
+    color: var(--blue);
+}
+
+.button_lock:hover{
+    color: var(--yellow);
+}
+
+.button_delete:hover{
+    color: var(--lightRed);
+}
+
+.button_delete:active, .button_edit:active, .button_lock:active{
+    color: var(--white);
+}

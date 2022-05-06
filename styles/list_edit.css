@@ -1,0 +1,76 @@
+.edit_container{
+    display: flex;    
+    z-index: 1;
+    width: 100%;
+    /* border-radius: 1em; */
+    height: 12vh;
+    background-color: var(--greenBlue);
+    color:var(--white);
+    align-items: center;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+}
+
+.edit_back_arrow{
+    height: 100%;
+    justify-content: center;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit_back_arrow:hover i{
+    color: var(--white);
+    }
+
+.edit_back_arrow:active i{
+    color: var(--semiWhite);
+}
+
+.edit_container input{
+    background:none;
+    background-color: var(--greenBlue);
+    border: none;
+    font-size: medium;
+    width: 78%;
+    height: 60%;
+    color:var(--white);
+}
+
+.edit_container input::placeholder {
+    color: var(--semiWhite);
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 2%;
+}
+
+.edit_container input:hover {
+    background-color: var(--harderGreenBlue);
+}
+
+.edit_container input:focus {
+    outline: none;
+    border: none;
+}
+
+.button_save, .button_close {
+    margin-right: 2%;
+}
+
+.edit_container i{
+    color: var(--dark);
+}
+
+.button_save i:hover {
+    background:none;
+    color: var(--limeGreen);
+}
+
+.button_close i:hover{
+    color: var(--lightRed);
+}
+
+.button_save i:active, .button_close i:active{
+    color: var(--white);
+}

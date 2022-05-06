@@ -1,0 +1,52 @@
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    color: var(--limeGreen);
+    font-size: medium;
+    font-weight: lighter;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_left{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+    font-size: small;
+}
+
+.header_rigth{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 5%;
+    font-size: small;
+}
+
+.clear_all_button {
+    color: var(--darkGrey);
+    font-size: medium;
+    background: none;
+    border: none;
+    color: var(--darkGrey);
+}
+
+.clear_all_button:hover{
+    color: var(--lightRed);
+}
