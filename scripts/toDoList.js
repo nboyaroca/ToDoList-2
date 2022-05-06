@@ -20,7 +20,6 @@ export const toDoList = {
         this.listState.push(newToDo)
         this.render();
         }
-
     },
 
     deleteByIndex(index){
