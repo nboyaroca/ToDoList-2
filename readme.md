@@ -32,7 +32,7 @@ I expect to improve the app with new features soon:
 ![Default](/images/1Default%20PC.png "Default")
 ###### Mobile
 
-![New task](/images/3Task%20Edit.png "New task")
+![New task](/images/2New%20Task%20mobile.png "New task")
 ![Task edition](/images/3Task%20Edit.png "Task edition")
 
 ## THANKS AND ACKNOWLEDGMENTS
