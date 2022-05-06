@@ -105,18 +105,22 @@ header{
 
 #search_object{
     z-index: 1;
-    width: 100%;
+    width: 300px;
     height: 5vh;
     display: flex;
     justify-content: center;
+    position: relative;
     }
 
 #search_object button{
     color: var(--dark);
     font-size: medium;
-    background-color: var(--softDark);
+    background: none;
     border: none;
     color: var(--dark);
+    position: absolute;
+    height: 100%;
+    right: 1%;
 }
 
 #input_search{
@@ -126,14 +130,19 @@ header{
     background: var(--softDark);
     display: flex;
     width: 20%;
-    min-width: 200px;
+    min-width: 300px;
     font-size: medium;
     font-weight: 500;
+    padding-left: 2%;
+}
+
+#input_search:focus{
+    background-color: var(--brokenWhite);
+    color: var(--darkGrey);
 }
 
 #input_search::placeholder{
     color: var(--lightGrey);
-    padding-left: 1%;
 }
 
 /* BODY */
@@ -221,67 +230,38 @@ li {
 
 /* BOTONS TODO */
 
-.toDo_interactions{
-    display: inline-flex;
-    width: 23%;  
-    gap: 4%;  
-    justify-content: flex-end;
-}
-
-.button_delete, .button_edit, .button_lock, #saveEdit {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: medium;
-    width: 25px;
-    height: 25px;
-}
-
 ul i {
     color: var(--darkGrey);
     transition: all 0.2s;
 }
 
+.button_delete, .button_edit, .button_lock, .button_save, .button_close, .edit_back_arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+}
+
 .button_delete:hover, .button_edit:hover, .button_lock:hover{
     background:none;
-    font-size: x-large;
-    margin: 0;
-    padding: 0;
 }
 
-.button_edit i:hover{
+.button_edit:hover{
     color: var(--blue);
 }
 
-.button_lock i:hover{
+.button_lock:hover{
     color: var(--yellow);
 }
 
-.button_delete i:hover{
+.button_delete:hover{
     color: var(--lightRed);
 }
 
-.button_delete i:hover{
-    color: var(--lightRed);
-}
-
-#editToDo:hover, #editToDo i:hover {
-    background:none;
-    color: var(--blue);
-    font-size: x-large;
-    margin: 0;
-    padding: 0;
-}
-
-#lockToDo:hover, #lockToDo i:hover {
-    background:none;
-    color: var(--yellow);
-    font-size: x-large;
-    margin: 0;
-    padding: 0;
-}
-
-#deleteToDo i:active, #editToDo i:active, #lockToDo i:active{
+.button_delete:active, .button_edit:active, .button_lock:active{
     color: var(--white);
 }
 
@@ -301,10 +281,20 @@ ul i {
     padding: 0;
 }
 
-#edit_back_arrow{
+.edit_back_arrow{
     height: 100%;
-    width: 10%;
     justify-content: center;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit_back_arrow:hover i{
+    color: var(--white);
+    }
+
+.edit_back_arrow:active i{
+    color: var(--semiWhite);
 }
 
 .edit_container input{
@@ -324,21 +314,13 @@ ul i {
     padding-left: 2%;
 }
 
-.edit_container input:focus {
-    outline: none;
-    border: none;
-}
-
 .edit_container input:hover {
     background-color: var(--harderGreenBlue);
 }
 
-.edit_container button{
-    background:none;
+.edit_container input:focus {
+    outline: none;
     border: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
 }
 
 .button_save, .button_close {
@@ -346,7 +328,6 @@ ul i {
 }
 
 .edit_container i{
-    font-size: x-large;
     color: var(--dark);
 }
 

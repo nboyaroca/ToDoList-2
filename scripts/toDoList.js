@@ -35,9 +35,9 @@ export const toDoList = {
             html += `<li><div class="toDo_main">
             <button id="status" class="toDo_status_default"></button>
             <div class="toDo_container">${listElement}</div>
-            <button id=${this.listState.indexOf(listElement)} class="button_edit"> E </button>
-            <button id=${this.listState.indexOf(listElement)} class="button_lock"> L </button>
-            <button id=${this.listState.indexOf(listElement)} class="button_delete"> D </button>
+            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-pen button_edit"></i>
+            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-lock button_lock"></i>
+            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-trash-can button_delete"></i>
             </div></li>`;
         }
 
