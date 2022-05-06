@@ -140,7 +140,6 @@ ul{
     margin: 1vh auto 0vh auto;
     padding: 0;
     overflow-y:auto;
-    overscroll-behavior-inline: smooth;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;

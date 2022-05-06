@@ -29,11 +29,11 @@ I expect to improve the app with new features soon:
 ##  👁️‍🗨️ SCREENSHOTS
 
 ###### PC
-![Default](/images/1%20default%20screen%20pc.png "Default")
+![Default](/images/1Default%20PC.png "Default")
 ###### Mobile
 
-![New task](/images/2%20new%20task%20mobile.png "New task")
-![Task edition](/images/3%20task%20edit.png "Task edition")
+![New task](/images/3Task%20Edit.png "New task")
+![Task edition](/images/3Task%20Edit.png "Task edition")
 
 ## THANKS AND ACKNOWLEDGMENTS
 This application wouldn't be possible without the help and patience of my team colleagues and the master of the Bootcamp.
