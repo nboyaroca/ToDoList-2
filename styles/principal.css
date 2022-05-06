@@ -39,26 +39,6 @@ header{
     position: relative;
 }
 
-#clear_all_button, #search_button {
-    color: var(--softLimeGreen);
-    border: none;
-    background: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    font-size: medium;
-}
-
-#clear_back_arrow, #search_back_arrow, #edit_back_arrow{
-    color: var(--white);
-    cursor: pointer;
-    border: none;
-    background: none;
-    margin: 0;
-    padding: 0;
-    font-size: medium;
-}
-
 /* LOGOTIP I HEADER-MAIN CENTER */
 
 #logo {
@@ -82,35 +62,38 @@ header{
     font-size: small;
 }
 
-#clear_all_button:hover{
-    color: var(--lightRed);
-}
-
 .header_rigth{
     width: 10%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-right: 5%;
     font-size: small;
 }
 
-#search_button:hover{
-    color: var(--limeGreen);
+.clear_all_button {
+    color: var(--darkGrey);
     font-size: medium;
+    background: none;
+    border: none;
+    color: var(--darkGrey);
+}
+
+.clear_all_button:hover{
+    color: var(--lightRed);
 }
 
 /* SEARCH */
 
 #search_object{
     z-index: 1;
-    width: 300px;
+    width: 350px;
     height: 5vh;
     display: flex;
     justify-content: center;
     position: relative;
-    }
+}
 
 #search_object button{
     color: var(--dark);
@@ -118,9 +101,12 @@ header{
     background: none;
     border: none;
     color: var(--dark);
-    position: absolute;
     height: 100%;
-    right: 1%;
+}
+
+.button_search{
+    position: absolute;
+    right: 9%;
 }
 
 #input_search{
@@ -142,7 +128,7 @@ header{
 }
 
 #input_search::placeholder{
-    color: var(--lightGrey);
+    color: var(--darkGrey);
 }
 
 /* BODY */
