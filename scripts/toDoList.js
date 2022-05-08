@@ -1,5 +1,5 @@
 export const toDoList = {
-    listState: ['Anar al supermercat', 'Visitar a la família', 'Comprar vols'
+    listState: ['Visitar a la família', 'Comprar vols'
     ],
 
     editByIndex(index, parentContainer){
@@ -32,13 +32,20 @@ export const toDoList = {
 
         for(let listElement of this.listState){
             html += `<li><div class="toDo_main">
-            <button id="status" class="toDo_status_default"></button>
-            <div class="toDo_container">${listElement}</div>
+            <div class="toDo_status">
+            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-circle-notch toDo_status_default"></i>
+            </div>
+            <div class="toDo_task">${listElement}</div>
             <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-pen button_edit"></i>
             <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-lock button_lock"></i>
             <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-trash-can button_delete"></i>
             </div></li>`;
         }
+
+        // <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-check toDo_status_done"></i> --> icona status done
+        // <i class="fa-solid fa-exclamation toDo_status_important"></i> --> icona status important
+        // <i class="fa-solid fa-clock-rotate-left toDo_status_remind"></i> --> icona status remind
+
 
         let listByDOM = document.getElementById("list_object");
         listByDOM.innerHTML=html;

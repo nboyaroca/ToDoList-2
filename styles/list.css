@@ -11,9 +11,10 @@ li {
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
-    margin-bottom: 0.5%;
     height: 12vh;
-    margin-right:1%
+    margin:0% .5% 0.5% .5%;
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .toDo_main:hover{
@@ -29,58 +30,65 @@ li {
     transition: background-color 0,2s;
 }
 
-/* STATUS TODO*/
-
-.toDo_status_default{
+.toDo_main i{
     background:none;
-    margin: 0 auto; 
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    border-width: 0.15rem;
-    border-color: var(--darkGrey);
-    border-style: solid;
-    padding: 0;
-    margin: 3%;
+    margin: 0 auto;
+    padding: 0 1% 0 1%;
+    color: var(--darkGrey);
+    transition: all 0.2s;
 }
 
-.toDo_status_undone{
-    border-color: var(--lightRed);
+.toDo_main:active i{
+    color: var(--dark);
+}
+
+/* STATUS TODO*/
+
+.toDo_status{
+    display: flex;
+    justify-items: center;
+    width: 5rem;
+}
+
+.toDo_status_default{
+    color: var(--darkGrey);
 }
 
 .toDo_status_doing{
-    border-color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .toDo_status_done{
-    border-color: var(--vividGreen);
+    color: var(--vividGreen) !important;
 }
+
+.toDo_status_important{
+    color: var(--lightRed) !important;
+}
+
+.toDo_status_remind{
+    color: var(--blue) !important;
+}
+
 
 /* CONTENIDOR TODO */
 
-.toDo_container{
+.toDo_task{
     display: flex;
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
     overflow-wrap: anywhere;
     text-transform: capitalize;
 }
 
 /* BOTONS TODO + EDIT */
 
-ul i {
-    color: var(--darkGrey);
-    transition: all 0.2s;
-}
-
 .button_delete, .button_edit, .button_lock, .button_save, .button_close, .edit_back_arrow {
     background: none;
     border: none;
     cursor: pointer;
     font-size: large;
-    width: 25px;
-    height: 25px;
-    margin-left: 2%;
+    width: 2.2rem;
 }
 
 .button_delete:hover, .button_edit:hover, .button_lock:hover{

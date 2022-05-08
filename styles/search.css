@@ -1,10 +1,11 @@
 #search_object{
     z-index: 1;
-    width: 350px;
     height: 5vh;
     display: flex;
     justify-content: center;
     position: relative;
+    width: 25%;
+    min-width: 15rem;
 }
 
 #input_search{
@@ -13,11 +14,12 @@
     border: none;
     background: var(--softDark);
     display: flex;
-    width: 20%;
-    min-width: 300px;
+    width: 100%;
     font-size: medium;
     font-weight: 500;
     padding-left: 2%;
+    padding-right: 15%;
+    /* border-radius: 0.5rem; */
 }
 
 #input_search:focus{
@@ -37,5 +39,5 @@
     border: none;
     color: var(--dark);
     height: 100%;
-    right: 9%;
+    right: 2%;
 }
