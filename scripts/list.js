@@ -19,7 +19,7 @@ export const toDoList = {
         if (newToDo.length > 0){
         this.listState.push(newToDo)
         this.render();
-        }
+        } {console.log("Error. The input is empty")}
     },
 
     deleteByIndex(index){
@@ -29,17 +29,26 @@ export const toDoList = {
 
     render(){
         let html ="";
+        let listZone = document.getElementById("list_object");
 
-        for(let listElement of this.listState){
-            html += `<li><div class="toDo_main">
-            <div class="toDo_status">
-            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-circle-notch toDo_status_default"></i>
-            </div>
-            <div class="toDo_task">${listElement}</div>
-            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-pen button_edit"></i>
-            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-lock button_lock"></i>
-            <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-trash-can button_delete"></i>
-            </div></li>`;
+
+        if (this.listState.length>0){
+            for(let listElement of this.listState){
+                html += `<li><div class="toDo_main">
+                <div class="toDo_status">
+                <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-circle-notch toDo_status_default"></i>
+                </div>
+                <div class="toDo_task">${listElement}</div>
+                <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-pen button_edit"></i>
+                <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-lock button_lock"></i>
+                <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-trash-can button_delete"></i>
+                </div></li>`;
+            }
+            listZone.style.justifyContent=("flex-start");
+        }
+        else{html=`<p>There's nothing to do!<br><span>#relaxingtime</spant></p><i class="fa-solid fa-ghost fa-5x"></i>`
+        listZone.style.display=("flex");
+        listZone.style.justifyContent=("center");
         }
 
         // <i id=${this.listState.indexOf(listElement)} class="fa-solid fa-check toDo_status_done"></i> --> icona status done

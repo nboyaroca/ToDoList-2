@@ -10,6 +10,14 @@
     justify-content:center;
 }
 
+.edit_container i{
+    font-size: large;
+}
+
+.edit_container:hover i{
+    color: var(--dark);
+}
+
 .edit_back_arrow{
     height:100%;
     justify-content: center;

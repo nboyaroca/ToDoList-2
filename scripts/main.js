@@ -1,4 +1,4 @@
-import { toDoList } from "./toDoList.js";
+import { toDoList } from "./list.js";
 
 document.addEventListener('DOMContentLoaded', keyPress("Enter"))
 

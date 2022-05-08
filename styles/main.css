@@ -44,4 +44,24 @@ ul{
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    display: flex;
+}
+
+ul p{
+    color: var(--darkGrey);
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -5%;
+}
+
+ul span{
+    font-size: x-large;
+    font-weight: 100;
+}
+
+ul i{
+    color: var(--darkGrey);
+    font-size: xx-large;
+    margin-top: 5%;
 }

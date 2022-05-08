@@ -38,6 +38,10 @@ li {
     transition: all 0.2s;
 }
 
+.toDo_main:hover i{
+    color: var(--vividBlue);
+}
+
 .toDo_main:active i{
     color: var(--dark);
 }
@@ -48,6 +52,10 @@ li {
     display: flex;
     justify-items: center;
     width: 5rem;
+}
+
+.toDo_status i{
+    font-size: medium;
 }
 
 .toDo_status_default{
@@ -87,7 +95,7 @@ li {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: large;
+    font-size: medium;
     width: 2.2rem;
 }
 
@@ -96,15 +104,15 @@ li {
 }
 
 .button_edit:hover{
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 
 .button_lock:hover{
-    color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .button_delete:hover{
-    color: var(--lightRed);
+    color: var(--lightRed) !important;
 }
 
 .button_delete:active, .button_edit:active, .button_lock:active{
