@@ -1,4 +1,39 @@
-/* CONTINGUT DE CADA TODO - ESTRUCTURA */
+/* ESTRUCTURA DE FONS DE LA LLISTA */
+
+ul{
+    width: 100%;
+    max-width: 40rem;
+    height: 74vh;
+    margin: 1vh auto 0vh auto;
+    padding: 0;
+    overflow-y:auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+ul p{
+    color: var(--darkGrey);
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -5%;
+}
+
+ul span{
+    font-size: x-large;
+    font-weight: 100;
+}
+
+ul i{
+    color: var(--darkGrey);
+    font-size: xx-large;
+    margin-top: 5%;
+}
+
+/* CONTINGUT DE CADA TODO */
 
 li {
     list-style-type: none;
@@ -79,7 +114,7 @@ li {
 }
 
 
-/* CONTENIDOR TODO */
+/* CONTENIDOR TEXT TODO */
 
 .toDo_task{
     display: flex;
@@ -89,7 +124,7 @@ li {
     text-transform: capitalize;
 }
 
-/* BOTONS TODO + EDIT */
+/* BOTONS TODO (+ EDIT) */
 
 .button_delete, .button_edit, .button_lock, .button_save, .button_close, .edit_back_arrow {
     background: none;
