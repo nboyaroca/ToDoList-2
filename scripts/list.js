@@ -2,7 +2,7 @@ export const toDoList = {
     listState: ['Visitar a la família', 'Comprar vols'
     ],
 
-    editByIndex(index, parentContainer,newToDo){
+    editByIndex(index, parentContainer){
         console.log(index,parentContainer)
 
         parentContainer.innerHTML=(`<div class="edit_container">
