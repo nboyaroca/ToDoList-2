@@ -15,7 +15,7 @@ ul{
 }
 
 ul p{
-    color: var(--darkGrey);
+    color: var(--greenBlue);
     font-size: medium;
     font-weight: 600;
     text-align: center;
@@ -28,9 +28,13 @@ ul span{
 }
 
 ul i{
-    color: var(--darkGrey);
+    color: var(--greenBlue);
     font-size: xx-large;
     margin-top: 5%;
+}
+
+ul i:hover, ul p:hover{
+    color: var(--yellow);
 }
 
 /* CONTINGUT DE CADA TODO */

@@ -45,7 +45,7 @@ export const toDoList = {
             }
             listZone.style.justifyContent=("flex-start");
         }
-        else{html=`<p>There's nothing to do!<br><span>#relaxingtime</spant></p><i class="fa-solid fa-ghost fa-5x"></i>`
+        else{html=`<p>There's nothing to do!<br><span>#relaxingtime</span></p><i class="fa-solid fa-ghost fa-5x"></i>`
         listZone.style.display=("flex");
         listZone.style.justifyContent=("center");
         }
