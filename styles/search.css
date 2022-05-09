@@ -22,6 +22,10 @@
     /* border-radius: 0.5rem; */
 }
 
+#input_search:hover{
+    background-color: var(--lightGrey);
+}
+
 #input_search:focus{
     background-color: var(--brokenWhite);
     color: var(--darkGrey);
